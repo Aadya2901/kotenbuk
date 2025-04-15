@@ -14,6 +14,14 @@ main {
   padding-top: 100px;
 }
 
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -42,7 +50,7 @@ main {
 }
 
 .typewriter-container {
-  font-size: 5em;
+  font-size: 5vw;
   font-family: 'Courier New', Courier, monospace;
   color: #fff;
   border-right: 3px solid #fff;
@@ -52,8 +60,11 @@ main {
   height: 2.5em;
   line-height: 2.5em;
   /* margin-right: 50px; */
-  margin-left: 380px;
+  margin-left: 0;
   font-weight: 600;
+  text-align: center;
+  max-width: 90%;
+  width: 100%;
 }
 
 @keyframes blinkCursor {
@@ -259,6 +270,7 @@ main {
   }
 }
 
+
 /* === Upload Section === */
 .upload-section {
   opacity: 0;
@@ -425,6 +437,45 @@ main {
   animation-delay: 0.3s;
   opacity: 0;
   backdrop-filter: blur(10px);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .navbar .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .navbar .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* Ensure navbar links show properly on desktop */
+@media (min-width: 769px) {
+  .navbar .navbar-links {
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+  }
 }
 
 @keyframes blinkCursor {
@@ -446,6 +497,28 @@ main {
   0% { transform: translate3d(0, 0, 0) rotate(0deg); }
   100% { transform: translate3d(var(--x-end, 0px), 100vh, 0) rotate(360deg); }
 }
+/* 
+.theme-song {
+  margin-left: 100px;
+  padding: 25px 30px;
+  width: 100%;
+  background: transparent;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  background: transparent;
+  border-radius: 15px;
+  color:beige;
+} */
 
 /* Sakura Container */
 #sakura-container {
@@ -476,8 +549,4 @@ main {
     transform: translateY(100vh) translateX(var(--x-end));
     opacity: 0;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
