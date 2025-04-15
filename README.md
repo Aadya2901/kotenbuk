@@ -68,24 +68,24 @@ To create a responsive, visually elegant, and fully interactive fan site honorin
 
 
 hyouka-fan-website/
-├── index.html # Landing Page 
-├── characters.html # Character Profiles 
-├── episodes.html # Episode Guide 
-├── timeline.html # Series Timeline 
-├── community.html # Community Forum 
-├── fanart.html # Fan Art Gallery 
-├── style-homepage.css # CSS for homepage 
-├── style-characters.css # CSS for characters 
-├── style-episodes.css # CSS for episodes 
-├── style-timeline.css # CSS for timeline 
-├── style-community.css # CSS for forum 
-├── style-fanart.css # CSS for fan art 
-├── script-homepage.js # JS for homepage 
-├── script-characters.js # JS for characters 
-├── script-episodes.js # JS for episode logic 
-├── script-timeline.js # JS for timeline 
-├── script-community.js # JS for forum 
-├── script-fanart.js # JS for fan art 
+├── index.html         # Landing Page 
+├── characters.html   # Character Profiles 
+├── episodes.html     # Episode Guide 
+├── timeline.html     # Series Timeline 
+├── community.html     # Community Forum 
+├── fanart.html   # Fan Art Gallery 
+├── style-homepage.css   # CSS for homepage 
+├── style-characters.css   # CSS for characters 
+├── style-episodes.css   # CSS for episodes 
+├── style-timeline.css   # CSS for timeline 
+├── style-community.css   # CSS for forum 
+├── style-fanart.css       # CSS for fan art 
+├── script-homepage.js     # JS for homepage 
+├── script-characters.js   # JS for characters 
+├── script-episodes.js     # JS for episode logic 
+├── script-timeline.js     # JS for timeline 
+├── script-community.js    # JS for forum 
+├── script-fanart.js       # JS for fan art 
 ├── [all images] # Images are stored directly here 
 └── README.md # This file
 
