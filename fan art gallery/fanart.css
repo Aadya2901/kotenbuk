@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  background: #f6f4f2; /* You can change this */
+}
+body {
+  background-image: url('backgroundimage.jpg'); /* Make sure this path matches your image file */
+  background-size: cover;          /* Cover the whole screen */
+  background-repeat: no-repeat;    /* Prevent tiling */
+  background-attachment: fixed;    /* So it stays fixed on scroll */
+  background-position: center;     /* Center the image */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.art-card {
+  background: transparent; /* Remove card background */
+  border-radius: 10px;
+  box-shadow: none; /* Remove the shadow */
+  overflow: hidden;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+
+.art-card:hover {
+  transform: scale(1.03);
+}
+
+.art-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent label area */
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+
+.like-btn {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.like-btn:hover {
+  background-color: #ff6b81;
+}
+.gallery-info {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* Subtle dark overlay */
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+.gallery-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #e8dd9f; /* Golden title */
+}
+.gallery-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.card-description {
+  font-size: 14px;
+  color: #1a0202;
+  margin: 10px 0 5px;
+  padding: 0 10px;
+  text-align: center;
+}
+/* fan art upload */
+ /* Initial state for animation (invisible, below the screen) */
+ .upload-section {
+  opacity: 1;
+  transform: translateY(30px); /* Start slightly below */
+  transition: opacity 1s ease, transform 1s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px); 
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  color: #f9f5ef;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* When the form is in view (this class will be added by JS) */
+.upload-section.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Animate to original position */
+}
+
+/* Optional: you can tweak the timing and animation style */
+.upload-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Inputs & Button Styles */
+.upload-section input,
+.upload-section button {
+  display: block;
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #f9f5ef;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* backdrop-filter: blur(5px); */
+}
+
+.upload-section input::placeholder {
+  color: #ddd;
+}
+
+.upload-section button {
+  background-color: #b27677;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-section button:hover {
+  background-color: #a15e65;
+}
+.sakura {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('blossom.png'); /* Your transparent petal */
+  background-size: cover;
+  opacity: 0.8;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(0, -10px, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--x-end, 0px), 100vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+

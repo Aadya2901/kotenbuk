@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyouka Fan Art Gallery</title>
+  <link rel="stylesheet" href="fanart.css">
+</head>
+<body>
+  <div id="sakura-container"></div>
+  <h1 class="title"></h1>
+  <section class="gallery-info">
+    <h2>Hyouka Fan Art Gallery</h2>
+    <p>All the artwork below is created by our amazing Hyouka fans. Each piece reflects love, imagination, and admiration for the series. If you love what you see, don’t forget to drop a like ❤️</p>
+  </section>
+  
+
+  <div class="gallery">
+    <div class="art-card">
+      <img src="1.jpg" alt="Fan Art 1">
+      <div class="info">
+        <p class="card-description">A playful moment between Houtarou and Eru, capturing their cute chemistry.</p>
+        <p>By Artist 1</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="2.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description"> Eru is playfully squishing Houtarou's cheek while he looks a bit annoyed but not seriously.</p>
+        <p>By Artist 2</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    <div class="art-card">
+      <img src="3.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description"> Eru with long brown hair in a sailor uniform looks thoughtful, while Houtarou with messy dark hair and green eyes sits resting his chin on his hand, watching her.</p>
+        <p>By Artist 3</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    <div class="art-card">
+      <img src="4.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description">Eru and Houtarou studying together.</p>
+        <p>By Artist 4</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    <div class="art-card">
+      <img src="5.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p>By Artist 5</p>
+        <p class="card-description">A playful moment between Houtarou and Eru, capturing their cute chemistry.</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    
+    <div class="art-card">
+      <img src="6.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description"> Oreki looking all handsome and mysterious.</p>
+        <p>By Artist 6</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    <div class="art-card">
+      <img src="7.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description"> Eru being playful and Houtarou pretending to be annoyed.</p>
+        <p>By Artist 7</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    <div class="art-card">
+      <img src="8.jpg" alt="Fan Art 2">
+      <div class="info">
+        <p class="card-description"> OrekixChitanda</p>
+        <p>By Artist 8</p>
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+      </div>
+    </div>
+    
+    <!-- Add more cards as needed -->
+  </div>
+ 
+<div class="upload-section" id="uploadForm">
+  <h2>Submit Your Fan Art</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Artwork Title" required>
+    <input type="file" accept="image/*" required>
+    <input type="text" placeholder="Short Description about the artwork" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const formSection = document.getElementById("uploadForm");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target); // Optional: stop observing once animated
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(formSection);
+  });
+</script>
+<script>
+  const sakuraContainer = document.getElementById('sakura-container');
+
+  function createPetal() {
+    const petal = document.createElement('div');
+    petal.classList.add('sakura');
+
+    // Random horizontal start
+    petal.style.left = Math.random() * 100 + 'vw';
+
+    // Random duration and rotation offset
+    petal.style.animationDuration = (Math.random() * 3 + 4) + 's';
+    petal.style.setProperty('--x-end', `${Math.random() * 100 - 50}px`);
+
+    sakuraContainer.appendChild(petal);
+
+    // Remove after 7 seconds
+    setTimeout(() => {
+      petal.remove();
+    }, 7000);
+  }
+
+  // Sprinkle for 5 seconds after load
+  window.addEventListener('load', () => {
+    const interval = setInterval(createPetal, 150);
+    setTimeout(() => clearInterval(interval), 5000); // sprinkle only for 5 seconds
+  });
+</script>
+  <script src="fanart.js"></script>
+</body>
+</html>

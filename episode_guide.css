@@ -1,0 +1,271 @@
+body {
+  background-color: #B77982;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.episode {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+  .episode.alt {
+      flex-direction: row-reverse;
+}
+
+.episode img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* --- Slide-in Animations --- */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* --- Slide-in Animations --- */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hidden by default */
+.episode img,
+.episode .content {
+  opacity: 0;
+  transition: all 0.8s ease;
+  will-change: transform, opacity;
+}
+
+/* Show on scroll */
+.episode.in-view img {
+  animation: slideInLeft 1s forwards;
+}
+
+.episode.in-view:nth-child(even) img {
+  animation: slideInRight 1s forwards;
+}
+
+.episode.in-view .content {
+  animation: slideInRight 1s forwards;
+}
+
+.episode.in-view:nth-child(even) .content {
+  animation: slideInLeft 1s forwards;
+}
+body {
+  background-image: url('backgroundimage.jpg'); /* Make sure this path matches your image file */
+  background-size: cover;          /* Cover the whole screen */
+  background-repeat: no-repeat;    /* Prevent tiling */
+  background-attachment: fixed;    /* So it stays fixed on scroll */
+  background-position: center;     /* Center the image */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* sakura effect */
+#sakura-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+#sakura-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.sakura {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('blossom.png'); /* Your transparent petal */
+  background-size: cover;
+  opacity: 0.8;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(0, -10px, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--x-end, 0px), 100vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* watch episode */
+.watch-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #B27677;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #5E4B56;
+}
+
+.episode-interaction {
+  margin-top: 1.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.rating {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.rating .star.active {
+  color: #FFD700;
+}
+
+.comment-box textarea.comment-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.submit-comment {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #B27677;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.comments-list {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.comments-list p {
+  background: #f0e6e6;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}      
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.3s;
+}
+.star.rated {
+  color: gold;
+}
+
+.episode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.watch-button {
+  margin-right: 20px;  /* Optional: adds space between the button and the stars */
+}
+
+.rating {
+  display: flex;
+}

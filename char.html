@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyouka Character Profiles</title>
+  <link rel="stylesheet" href="char.css">
+</head>
+<body>
+  <h1>Character Profile</h1>
+  <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="main">Main</button>
+    <button data-filter="supporting">Supporting</button>
+    <button data-filter="minor">Minor</button>
+    <!-- <button data-filter="extras">Extras</button> -->
+  </div>
+
+  <div class="modal" id="characterModal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <img id="modalImg" src="" alt="Character Image">
+      <h2 id="modalName"></h2>
+      <p id="modalDesc"></p>
+      <p id="modalQuotes"></p>
+      <p id="modalVoiceActor"></p>
+      <p id="modalAge"></p>
+      <p id="modalRoleInStory"></p>
+    </div>
+  </div>
+  
+  <div class="character-grid">
+    <!-- Character cards will be injected here via JavaScript -->
+  </div>
+
+  <!-- sakura -->
+  <div id="sakura-container"></div>
+
+  <script src="char.js"></script>
+  
+</body>
+</html>
