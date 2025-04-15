@@ -125,14 +125,25 @@ Your live site will be available at 🔗 [Visit the Website](https://hyouka-anim
 
 
 📸 Screenshots
-[Add image files directly in your repo and link them below 👇]
 
+### Landing Page
+![Landing Page](screenshots/landing_page.png)
 
-Landing Page	Character Profiles
+### Character Profiles
+![Character Profiles](screenshots/character_profiles.png)
 
-Episode Guide	Timeline
+### Episode Guide
+![Episode Guide](screenshots/episode_guide.png)
 
-Fan Art Gallery	Community Forum]
+### Timeline
+![Timeline](screenshots/timeline.png)
+
+### Fan Art Gallery
+![Fan Art Gallery](screenshots/fan_art_gallery.png)
+
+### Community Forum
+![Community Forum](screenshots/community_forum.png)
+
 
 
 ## 👥 Contributors
