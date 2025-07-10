@@ -1,4 +1,4 @@
-# 🌸 HYOUKA — A Fan Tribute Website
+# 🌸 Kotenbuk – Hyouka Anime Fan Website
 
 A beautiful fan-made tribute site dedicated to the anime *Hyouka* by Kyoto Animation. This website offers detailed character profiles, episode summaries with ratings, a timeline of events, a fan art gallery, and a lightweight community forum — all wrapped in a mystery-themed aesthetic that mirrors the show’s charm.
 
@@ -12,7 +12,7 @@ To create a responsive, visually elegant, and fully interactive fan site honorin
 
 ## 🚀 Live Demo
 
-🔗 [Visit the Website](https://hyouka-anime-fan-website.vercel.app/)
+🔗 [Visit the Website](https://kotenbuk.vercel.app/)
 
 ---
 
