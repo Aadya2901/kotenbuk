@@ -150,10 +150,10 @@ Your live site will be available at 🔗 [Visit the Website](https://hyouka-anim
 
 | Name                                                   | Role                                                                         |
 |--------------------------------------------------------|------------------------------------------------------------------------------|
-| [Aadya2901](https://github.com/Aadya2901)              | Homepage, Character Profiles, Deployment                    |
-| [iam-anish15](https://github.com/iam-anish15)          | Timeline, Character Profiles, Homepage                                       |
+| [Aadya2901](https://github.com/Aadya2901)              | Homepage, Character Profiles, Deployment, Responsiveness                     |
+| [iam-anish15](https://github.com/iam-anish15)          | Timeline, Character Profiles, Homepage, Responsiveness,                      |
 | [ananyamishra13](https://github.com/ananyamishra13)    | Fan Art Gallery, Episode Guide                                               |
-| [AANYARAI](https://github.com/AANYARAI)                | Responsiveness, Page Linking, Deployment                               |
+| [AANYARAI](https://github.com/AANYARAI)                | Page Linking                                                                 |
 
 
 🤝 Contributing
@@ -164,6 +164,7 @@ We welcome contributions, improvements, or just bug fixes. Here's how:
 3. Commit your changes (`git commit -m 'Add your feature'`)
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
+
 📝 License
 This project is open source and available under the MIT License.
 Feel free to use it for personal or educational purposes.
