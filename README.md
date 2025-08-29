@@ -88,7 +88,7 @@ To create a responsive, visually elegant, and fully interactive fan site honorin
 ## 📁 Folder Structure
 
 
-
+```
 hyouka-fan-website/
 ├── index.html         # Landing Page 
 ├── characters.html   # Character Profiles 
@@ -110,7 +110,7 @@ hyouka-fan-website/
 ├── script-fanart.js       # JS for fan art 
 ├── [all images] # Images are stored directly here 
 └── README.md # This file
-
+```
 
 > ✅ Each page has its own separate CSS and JS file for better modularity and easier maintenance.
 
