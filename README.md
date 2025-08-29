@@ -63,6 +63,29 @@ To create a responsive, visually elegant, and fully interactive fan site honorin
 
 ---
 
+## 📸 Screenshots
+
+**Landing Page**  
+![Landing Page](screenshots/landingpage.jpg)  
+![Landing Page 2](screenshots/landingpage2.jpg)
+
+**Character Profiles**  
+![Character Profiles](screenshots/characters.jpg)
+
+**Episode Guide**  
+![Episode Guide](screenshots/episodes.jpg)
+
+**Timeline**  
+![Timeline](screenshots/timeline.jpg)
+
+**Fan Art Gallery**  
+![Fan Art Gallery](screenshots/fanart.jpg)
+
+**Community Forum**  
+![Community Forum](screenshots/community.jpg)
+
+---
+
 ## 📁 Folder Structure
 
 
