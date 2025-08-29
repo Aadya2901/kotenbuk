@@ -66,25 +66,25 @@ To create a responsive, visually elegant, and fully interactive fan site honorin
 ## 📸 Screenshots
 
 --- **Landing Page**
-![Landing Page](screenshots/landingpage.jpg)  
+![Landing Page](landingpage.jpg)  
 
 --- **Landing Page 2** 
-![Landing Page 2](screenshots/landingpage2.jpg)  
+![Landing Page 2](landingpage2.jpg)  
 
 --- **Character Profiles** 
-![Character Profiles](screenshots/characters.jpg)  
+![Character Profiles](characters.jpg)  
 
 --- **Episode Guide** 
-![Episode Guide](screenshots/episodes.jpg)  
+![Episode Guide](episodes.jpg)  
 
 --- **Timeline** 
-![Timeline](screenshots/timeline.jpg)
+![Timeline](timeline.jpg)
 
 --- **Fan Art Gallery** 
-![Fan Art Gallery](screenshots/fanart.jpg) 
+![Fan Art Gallery](fanart.jpg) 
 
 --- **Community Forum** 
-![Community Forum](screenshots/community.jpg)
+![Community Forum](community.jpg)
 
 ---
 
