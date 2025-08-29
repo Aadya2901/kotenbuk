@@ -144,36 +144,14 @@ Set source branch to main and directory to /root
 
 Your live site will be available at 🔗 [Visit the Website](https://hyouka-anime-fan-website.vercel.app/)
 
-
-
-📸 Screenshots
-
-### Landing Page
-![Landing Page](screenshots/landing_page.png)
-
-### Character Profiles
-![Character Profiles](screenshots/character_profiles.png)
-
-### Episode Guide
-![Episode Guide](screenshots/episode_guide.png)
-
-### Timeline
-![Timeline](screenshots/timeline.png)
-
-### Fan Art Gallery
-![Fan Art Gallery](screenshots/fan_art_gallery.png)
-
-### Community Forum
-![Community Forum](screenshots/community_forum.png)
-
-
+```
 
 ## 👥 Contributors
 
 | Name                                                   | Role                                                                         |
 |--------------------------------------------------------|------------------------------------------------------------------------------|
 | [Aadya2901](https://github.com/Aadya2901)              | Homepage, Character Profiles, Deployment, Responsiveness                     |
-| [iam-anish15](https://github.com/iam-anish15)          | Timeline, Character Profiles, Homepage, Responsiveness,                      |
+| [iam-anish15](https://github.com/iam-anish15)          | Timeline, Character Profiles, Homepage, Responsiveness                       |
 | [ananyamishra13](https://github.com/ananyamishra13)    | Fan Art Gallery, Episode Guide                                               |
 | [AANYARAI](https://github.com/AANYARAI)                | Page Linking                                                                 |
 
